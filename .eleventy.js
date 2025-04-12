@@ -17,6 +17,8 @@ module.exports = function(eleventyConfig) {
       day: "numeric"
     });
   });
+  
+  eleventyConfig.addPassthroughCopy("src/admin");
 
   
 

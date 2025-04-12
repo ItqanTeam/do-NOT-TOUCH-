@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: ItqanTeam/do-NOT-TOUCH-
+  repo: Hamze-Aj/siradinstitude
   branch: main
 
 media_folder: "src/images"

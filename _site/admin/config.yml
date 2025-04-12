@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: ItqanTeam/do-NOT-TOUCH-.git
+  repo: ItqanTeam/do-NOT-TOUCH-
   branch: main
 
 media_folder: "src/images"

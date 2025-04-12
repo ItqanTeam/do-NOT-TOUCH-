@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/home.css">
+    {% if css === "blog.css" %}
+    <link rel="stylesheet" href="/styles/blog.css">
+    {% endif %}
+    {% if css === "blog-post.css" %}
+    <link rel="stylesheet" href="/styles/blog-post.css">
+    {% endif %}
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/home.css" />
-  <link rel="stylesheet" href="/contact.css" />
-</head>
-<body>
-
-  <!-- HEADER -->
-  <header>
+ <header>
     <div class="container">
       <nav>
         <div class="logo">SIRAD<span>Institute</span></div>
@@ -44,13 +44,12 @@
     </div>
   </header>
 
-  <!-- MAIN CONTENT -->
-  <main>
-    {{ content }}
-  </main>
 
-  <!-- FOOTER -->
-  <footer>
+    <main class="main-content" >
+        {{ content | safe }}
+    </main>
+
+     <footer>
     <div class="container">
       <div class="footer-content">
         <div class="footer-column">
@@ -81,5 +80,13 @@
     </div>
   </footer>
 
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

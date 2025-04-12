@@ -6,6 +6,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/research");
   eleventyConfig.addPassthroughCopy("src/capacity");
 
+  eleventyConfig.addCollection("blog", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/blog/*.md");
+  });
+
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return new Date(dateObj).toLocaleDateString("en-US", {
       year: "numeric",

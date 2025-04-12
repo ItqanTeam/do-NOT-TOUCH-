@@ -1,0 +1,24 @@
+{
+  "name": "do-not-touch-",
+  "version": "1.0.0",
+  "description": "Static site using Eleventy with existing HTML structure",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItqanTeam/do-NOT-TOUCH-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ItqanTeam/do-NOT-TOUCH-/issues"
+  },
+  "homepage": "https://github.com/ItqanTeam/do-NOT-TOUCH-#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
